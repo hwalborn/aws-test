@@ -7,6 +7,10 @@ class PeopleController < ApplicationController
     @people = Person.all
   end
 
+  def welcome
+    render :static
+  end
+
   # GET /people/1
   # GET /people/1.json
   def show
